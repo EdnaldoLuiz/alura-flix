@@ -1,12 +1,14 @@
-import './Header.css';
+import styles from './Header.module.css'
 
-export const Header = (props) => {
+ const Header = (props) => {
     console.log(props);
     return (
         <>
-            <header>
+            <header className={styles}>
                 <h1>My React App</h1>
             </header>
         </>
     );
 };
+
+export default Header;
