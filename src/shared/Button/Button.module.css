@@ -1,0 +1,11 @@
+button {
+    color: var(--text-color);
+    width: 12rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border: var(--border-color) var(--border-width);
+    background-color: var(--button-background);
+    border-radius: var(--border-radius);
+}

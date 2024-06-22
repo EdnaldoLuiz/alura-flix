@@ -3,10 +3,36 @@
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     height: fit-content;
-    padding: 1rem 0;
+    padding: 2rem 0;
+}
+
+.header__logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 3rem;
+}
+
+.header__logo img {
+    width: 10rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 3rem;
+}
+
+.button__wrapper {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
