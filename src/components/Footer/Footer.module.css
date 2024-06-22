@@ -1,6 +1,17 @@
 .footer {
-    background-color: #282c34;
-    padding: 20px;
-    color: white;
-    text-align: center;
+    background: var(--color-secondary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 0;
+}
+
+.img {
+    max-width: 7%;
+    height: auto;
 }
