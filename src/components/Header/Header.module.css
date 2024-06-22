@@ -1,0 +1,12 @@
+.header {
+    background: var(--primary-dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+}

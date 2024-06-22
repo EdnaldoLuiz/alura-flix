@@ -1,10 +1,9 @@
 import styles from './Header.module.css'
 
- const Header = (props) => {
-    console.log(props);
+ const Header = () => {
     return (
         <>
-            <header className={styles}>
+            <header className={styles.header}>
                 <h1>My React App</h1>
             </header>
         </>
