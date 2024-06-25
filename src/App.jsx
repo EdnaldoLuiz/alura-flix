@@ -1,8 +1,11 @@
-import Home from "./views/Home/Home";
+import NewForm from "./components/NewForm";
 
 function App() {
     return (
-        <Home />
+        <>
+        
+        <NewForm/>
+        </>
     );
 }
 
