@@ -1,10 +1,10 @@
-import NewForm from "./components/NewForm";
+import EditCard from "./components/EditCard/EditCard";
 
 function App() {
     return (
         <>
+        <EditCard/>
         
-        <NewForm/>
         </>
     );
 }
