@@ -1,11 +1,11 @@
-import Home from "./views/Home/Home";
-import GlobalStyles from "../public/styles/GlobalStyles";
+import NewForm from "./components/NewForm";
+import GlobalStyle from "./styles/global";
 
 function App() {
     return (
         <>
-            <GlobalStyles />
-            <Home />
+            <GlobalStyle />
+            <NewForm />
         </>
     );
 }

@@ -24,6 +24,7 @@ const Home = () => {
                 <Categoria titulo="Mobile" color="#FFBA05" />
             </ContainerCategorias>
             <Footer />
+
         </>
     );
 };
