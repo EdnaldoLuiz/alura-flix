@@ -1,5 +1,6 @@
 //import Button from '@shared/Button/Button';
-import Button from '../../shared/Button/Button';
+import ButtonNewVideo from '../../shared/Button/ButtonNewVideo';
+import ButtonHome from '../../shared/Button/ButtonHome';
 import styles from './Header.module.css'
 
 const Header = () => {
@@ -11,8 +12,8 @@ const Header = () => {
                 </div>
                 <nav className={styles.header__nav}>
                     <ul className={styles.button__wrapper}>
-                        <Button text="Home" />
-                        <Button text="Novo Vídeo" />
+                        <ButtonHome text="Home" />
+                        <ButtonNewVideo text="Novo Video" />
                     </ul>
                 </nav>
             </header>

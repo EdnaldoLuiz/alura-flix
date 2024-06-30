@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid red;
+    color: var(--text-color);
+    background: url('https://s3-alpha-sig.figma.com/img/66b1/c3df/1157a06d0979f3c0f7f0de4114c0ea72?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o5x1NOvuoQwmf7-Y5e2n7ukShVTUj4ElB-YFE1Ol4b3y8Nn1Ss3Ty05~YUdwLYnglRlTUfogds7amN98mrFgf16txKy271aV4EC7wb6wcIZHW8N9N3ixUCZgTchFDR4q-wfwyhiQXJ7nX4CHM7h9kyW2w~M8llS9N7CA5G0tIcVSQRolxh4gLjxU2JFaJSoIabBElFzhQYFUOLFF4UDYodIJU0M0zwZY8a~zQvC7updmg955cuVVq-~YJeSfS2VWDQlv~Qn54xNGOL8HGXuvi-KBo-fz7iapT5JpLuImELFiSu8wv16dWRKnooW0KaqE8fxg5iZKXeTxDC6FHjojAQ__') no-repeat center center;
+    background-size: cover;
+    height: 832px;
+}
+
+.homeBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: left;
+    border: 1px solid red;
+    flex: 1;
+}
+
+.homeBanner h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+    line-height: 53.91px;
+    margin-bottom: 1rem;
+}
+
+.homeBanner h1 {
+    font-size: 4.6rem;
+    font-weight: 800;
+    line-height: 53.91px;
+    margin-bottom: 1rem;
+}
+
+.homeBanner p {
+    color: inherit;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 21.09px;
+    margin-bottom: 1rem;
+}
+
+.homeVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid red;
+    flex: 1;
+}
+
+.homeVideo iframe {
+    width: 646px;
+    height: 333px;
+}

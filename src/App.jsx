@@ -1,8 +1,12 @@
 import Home from "./views/Home/Home";
+import GlobalStyles from "../public/styles/GlobalStyles";
 
 function App() {
     return (
-        <Home />
+        <>
+            <GlobalStyles />
+            <Home />
+        </>
     );
 }
 
