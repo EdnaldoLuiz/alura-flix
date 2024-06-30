@@ -1,11 +1,15 @@
 import NewForm from "./components/NewForm";
-import GlobalStyle from "./styles/global";
+import GlobalStyles from "../public/styles/GlobalStyles";
+import Home from "./components/Home/Home";
+import Routes from "./routes/Routes";
 
 function App() {
     return (
         <>
-            <GlobalStyle />
-            <NewForm />
+            <GlobalStyles />
+            <Routes />
+            <Home />
+            {/* <NewForm /> */}
         </>
     );
 }

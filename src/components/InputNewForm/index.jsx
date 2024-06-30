@@ -1,4 +1,3 @@
-import Button from "../../shared/Button/Button";
 import styles from "./InputNewForm.module.css";
 
 // eslint-disable-next-line react/prop-types
@@ -34,10 +33,10 @@ const InputNovoFormulario = ({ titleLabel, titlePlaceholder, categoryLabel, cate
                 <textarea id="descricao" placeholder={descriptionPlaceholder} className={styles.textareaField}></textarea>
             </div>
             <div className={styles.buttonContainer}>
-                <Button text="Guardar" />
+                <button>Guardar</button>
             </div>
             <div className={styles.secundButon}>
-                <Button text="Limpar" />
+                <button>Limpar</button>
             </div>
         </div>
     );

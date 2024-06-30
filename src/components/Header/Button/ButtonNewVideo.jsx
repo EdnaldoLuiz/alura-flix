@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { styled } from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const StyledButton = styled.button`
     font-family: "Source Sans 3", sans-serif;
@@ -17,14 +18,17 @@ const StyledButton = styled.button`
     cursor: pointer;
 `;
 
-const ButtonNewVideo = ({ text }) => {
+const ButtonNewVideo = ({ text, to }) => {
+    const navigate = useNavigate();
+    const handleClick = () => { navigate(to); };
     return (
-        <StyledButton>{text}</StyledButton>
+        <StyledButton onClick={handleClick}>{text}</StyledButton>
     );
 };
 
 ButtonNewVideo.propTypes = {
     text: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
 };
 
 export default ButtonNewVideo;

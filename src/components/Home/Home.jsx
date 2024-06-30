@@ -1,7 +1,6 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import styled from 'styled-components'
-import HomeBanner from "./BannerSection/BannerSection";
 import Categoria from "./VideoSection/VideoCategory";
 
 const ContainerCategorias = styled.div`
@@ -17,7 +16,6 @@ const Home = () => {
     return (
         <>
             <Header />
-            <HomeBanner />
             <ContainerCategorias>
                 <Categoria titulo="Front-End" color="#6BD1FF" />
                 <Categoria titulo="Back-End" color="#00C86F" />
