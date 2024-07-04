@@ -16,16 +16,28 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Roboto';
         --primary-dark: #000000E5;
         --color-primary: #2271D1;
-        --color-secondary: #333;
+        --color-secondary: #01080E;
         --color-tertiary: #f4f4f4;
         --primary-glow-color: #2271D1;
 
-        --border-radius: 0.5rem;
+        --border-radius: 1.5rem;
         --border-width: 0.3rem solid;
         --border-color: #2271D1;
+        --border: 1px solid #175A70;
         --button-background: #000000E5;
 
         --text-color: #F5F5F5;
+    }
+
+    html {
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    body {
+        font-size: 1.6rem;
+        background-color: #000509;
     }
 `;
 

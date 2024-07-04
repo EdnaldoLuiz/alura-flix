@@ -1,34 +1,38 @@
 import styled from 'styled-components';
+import VideoSectionButton from './VideoActionButton';
 
 const Card = styled.article`
     display: flex;
     flex-direction: column;
-    width: 430px;
-    border-radius: 16px;
-    border: 5px solid #6ACEFC;
+    width: 300px;
+    border-radius: var(--border-radius);
+    border: var(--border);
     overflow: hidden;
     iframe {
         width: 100%;
-        height: 240px;
+        height: 200px;
         border: none;
     }
-`
+`;
 
 const ButtonContainer = styled.div`
     display: flex;
     justify-content: space-around;
     padding: 20px;
     background-color: black;
-    button {
-        background-color: transparent;
-        border: none;
-        color: var(--text-color);
-        display: flex;
-        gap: 20px;
-        cursor: pointer;
-        align-items: center;
-    }
-`
+`;
+
+const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+`;
+
+const Description = styled.p`
+    background-color: inherit;
+    margin-bottom: 10px;
+    color: #333;
+`;
 
 const VideoCard = () => {
     return (
@@ -39,20 +43,23 @@ const VideoCard = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             />
-            <ButtonContainer>
-                <button>
-                    <img src="./src/assets/svg/delete.svg" alt="" />
-                    <h3>Deletar</h3>
-                </button>
-
-                <button>
-                    <img src="./src/assets/svg/edit.svg" alt="" />
-                    <h3>Editar</h3>
-                </button>
-            </ButtonContainer>
+            <ContentContainer>
+                <Description>
+                    ttt.
+                </Description>
+                <ButtonContainer>
+                    <VideoSectionButton
+                        icon="./public/assets/svg/delete.svg"
+                        text="Excluir"
+                    />
+                    <VideoSectionButton
+                        icon="./public/assets/svg/edit.svg"
+                        text="Editar"
+                    />
+                </ButtonContainer>
+            </ContentContainer>
         </Card>
     )
 }
 
 export default VideoCard;
-

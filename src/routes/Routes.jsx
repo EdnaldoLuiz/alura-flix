@@ -1,16 +1,18 @@
-import { BrowserRouter, Route, Routes as R } from 'react-router-dom';
-import Home from '../components/Home/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from '../components/Home';
 import NewForm from '../components/NewForm';
 
-function Routes() {
-  return (
-    <BrowserRouter>
-    <R>
-        <Route exact path="/" component={Home} />
-        <Route path="/novo-video" component={NewForm} />
-    </R>
-    </BrowserRouter>
-  );
+function AppRoutes() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}>
+                    <Route index element={<Home />}></Route>
+                    <Route path="novo" element={<NewForm />}></Route>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default Routes;
+export default AppRoutes;

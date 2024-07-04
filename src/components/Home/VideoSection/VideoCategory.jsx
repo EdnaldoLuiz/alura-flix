@@ -22,8 +22,9 @@ const TileContainer = styled.div`
 
 const Cards = styled.div`
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 `
 
 const VideoCategory = ({ titulo, color }) => {
@@ -33,6 +34,7 @@ const VideoCategory = ({ titulo, color }) => {
                 <h3>{titulo}</h3>
             </TileContainer>
             <Cards>
+                <VideoCard />
                 <VideoCard />
                 <VideoCard />
                 <VideoCard />
