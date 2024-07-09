@@ -39,6 +39,11 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.6rem;
         background-color: #000509;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 `;
 
 export default GlobalStyles;

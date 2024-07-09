@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Button from '../Button';
+import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
     background: var(--color-secondary);
@@ -10,7 +11,7 @@ const StyledHeader = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
-    height: fit-content;
+    height: 9rem;
     padding: 2rem 0;
 `;
 
@@ -49,8 +50,12 @@ const Header = () => {
             </LogoContainer>
             <Nav>
                 <ButtonWrapper>
-                    <li><Button text="Home" type='home'/></li>
-                    <li><Button text="Novo vídeo" type='novoVideo'/></li>
+                    <Link to="/">
+                        <Button text="Home" type='home' />
+                    </Link>
+                    <Link to="/novo">
+                        <Button text="Novo vídeo" type='novoVideo' />
+                    </Link>
                 </ButtonWrapper>
             </Nav>
         </StyledHeader>
