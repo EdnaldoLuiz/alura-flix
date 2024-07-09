@@ -11,6 +11,7 @@ const StyledFooter = styled.footer`
     width: 100%;
     height: fit-content;
     padding: 2.5rem 0;
+    border-top: var(--border);
 `;
 
 const FooterImage = styled.img`
