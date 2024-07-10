@@ -3,7 +3,7 @@ import Button from '../Button';
 import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
-    background: var(--color-secondary);
+    backdrop-filter: blur(7px);
     text-align: center;
     display: flex;
     align-items: center;
@@ -11,8 +11,10 @@ const StyledHeader = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
-    height: 9rem;
+    height: 8rem;
     padding: 2rem 0;
+    border-bottom: var(--border);
+    z-index: 1;
 `;
 
 const LogoContainer = styled.div`
@@ -20,7 +22,6 @@ const LogoContainer = styled.div`
     text-transform: uppercase;
     text-decoration: none;
     padding-left: 3rem;
-
     img {
         width: 10rem;
     }
@@ -51,10 +52,10 @@ const Header = () => {
             <Nav>
                 <ButtonWrapper>
                     <Link to="/">
-                        <Button text="Home" type='home' />
+                        <Button text="Home" btntype={1} />
                     </Link>
                     <Link to="/novo">
-                        <Button text="Novo vídeo" type='novoVideo' />
+                        <Button text="Novo vídeo" btntype={2} />
                     </Link>
                 </ButtonWrapper>
             </Nav>
