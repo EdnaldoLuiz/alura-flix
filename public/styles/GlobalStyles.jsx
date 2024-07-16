@@ -14,19 +14,23 @@ const GlobalStyles = createGlobalStyle`
     :root {
         font-size: 62.5%;
         font-family: 'Roboto';
-        --primary-dark: #000000E5;
-        --color-primary: #2271D1;
+        --primary-dark: #000000e4;
+        --color-primary: #021017;
         --color-secondary: #01080E;
-        --color-tertiary: #f4f4f4;
+        --color-tertiary: #175A70;
         --primary-glow-color: #2271D1;
 
-        --border-radius: 1.5rem;
+        --border-radius: .7rem;
         --border-width: 0.3rem solid;
-        --border-color: #2271D1;
+        --border-color: #175A70;
         --border: 1px solid #175A70;
         --button-background: #000000E5;
 
+        --default-text-size: 1.3rem;
         --text-color: #F5F5F5;
+        --text-color-blue: #2271D1;
+
+        --error-color: #FF0000;
     }
 
     html {
@@ -37,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         font-size: 1.6rem;
-        background-color: #000509;
+        background-color: #061723;
     }
 
     a {
