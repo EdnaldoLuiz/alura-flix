@@ -1,45 +1,37 @@
-import styles from "./InputNewForm.module.css";
+import { forwardRef } from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
-const InputNovoFormulario = ({ titleLabel, titlePlaceholder, categoryLabel, categoryPlaceholder, imageLabel, imagePlaceholder, videoLabel, videoPlaceholder, descriptionLabel, descriptionPlaceholder }) => {
+const StyledInput = styled.input`
+  flex: 1 1 100%;
+  padding: 1.3rem 1rem;
+  outline: unset;
+  font-size: var(--default-text-size);
+  color: ${props => props.iserror ? 'var(--error-color)' : 'var(--text-color)'};
+  border: 1px solid ${props => props.iserror ? 'var(--error-color)' : 'var(--border-color)'};
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+`;
+
+const InputNovoFormulario = forwardRef(({ type, placeholder, iserror, errorMessage, ...rest }, ref) => {
     return (
-        <div className={styles.formContainer}>
-            <div className={styles.row}>
-                <div className={styles.formGroup}>
-                    <label htmlFor="titulo">{titleLabel}</label>
-                    <input type="text" id="titulo" placeholder={titlePlaceholder} className={styles.inputField} />
-                </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="categoria">{categoryLabel}</label>
-                    <select id="categoria" className={styles.selectField}>
-                        <option value="" disabled selected>{categoryPlaceholder}</option>
-                        <option value="categoria1">Categoria 1</option>
-                        <option value="categoria2">Categoria 2</option>
-                    </select>
-                </div>
-            </div>
-            <div className={styles.row}>
-                <div className={styles.formGroup}>
-                    <label htmlFor="imagem">{imageLabel}</label>
-                    <input type="text" id="imagem" placeholder={imagePlaceholder} className={`${styles.inputField} ${styles.error}`} />
-                </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="video">{videoLabel}</label>
-                    <input type="text" id="video" placeholder={videoPlaceholder} className={styles.inputField} />
-                </div>
-            </div>
-            <div className={styles.formGroup}>
-                <label htmlFor="descricao">{descriptionLabel}</label>
-                <textarea id="descricao" placeholder={descriptionPlaceholder} className={styles.textareaField}></textarea>
-            </div>
-            <div className={styles.buttonContainer}>
-                <button>Guardar</button>
-            </div>
-            <div className={styles.secundButon}>
-                <button>Limpar</button>
-            </div>
-        </div>
+        <StyledInput
+            type={type}
+            placeholder={iserror ? errorMessage : placeholder}
+            iserror={iserror ? 'true' : undefined}
+            ref={ref}
+            {...rest}
+        />
     );
-}
+});
+
+InputNovoFormulario.displayName = 'InputNovoFormulario';
+
+InputNovoFormulario.propTypes = {
+    type: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired,
+    iserror: PropTypes.bool,
+    errorMessage: PropTypes.string,
+};
 
 export default InputNovoFormulario;
