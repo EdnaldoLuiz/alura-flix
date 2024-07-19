@@ -1,0 +1,46 @@
+{
+  "videos": [
+    {
+      "id": "fc2f9ad8-06e2-4da2-9c69-f399fa909e00",
+      "titulo": "Guia de carreira Front-end",
+      "descricao": "Nova temporada de Hipsters.tube no ar e agora com foco em carreira! 🎊",
+      "link": "https://www.youtube.com/watch?v=fpth65ts3cw",
+      "categoria": "front-end"
+    },
+    {
+      "id": "edf6ecf7-ad5e-4e0c-a37b-95ac3c893e16",
+      "titulo": "Diferença entre Back-End e Front-End com Mario Souto",
+      "descricao": "Qual a diferença entre Back-end e Front-end? É possível se especializar nas duas áreas? Como é a rotina desses profissionais e com quais outras áreas da tecnologia acabam se relacionando?",
+      "link": "https://www.youtube.com/watch?v=xrRy3RI3HE4",
+      "categoria": "back-end"
+    },
+    {
+      "id": "0247d73f-643e-49c9-a1d4-486b3b9f5476",
+      "titulo": "Desenvolvimento Android",
+      "descricao": "Um episódio focado no desenvolvimento de aplicações Android. Neste bate-papo, Paulo Silveira e Felipe Torres conversam sobre os primeiros passos para começar a desenvolver, quais as principais ferramentas do desenvolvimento mobile, como colocar sua aplicação no ar e mais! ",
+      "link": "https://www.youtube.com/watch?v=fWscDFHKgw8",
+      "categoria": "mobile"
+    },
+    {
+      "id": "c81195db-701e-4522-89d3-96c5b021094b",
+      "titulo": "O que faz uma desenvolvedora Back-end?",
+      "descricao": "Afinal, quem trabalha com Back-end faz o que? Com quais outras áreas da tecnologia essa pessoa acaba se relacionando no dia a dia de trabalho e quais os possíveis caminhos nessa carreira?",
+      "link": "https://www.youtube.com/embed/fiPfvylj6rk?si=XIFug63tBJLqMYdv",
+      "categoria": "back-end"
+    },
+    {
+      "id": "dcadd3d5-cd27-42ff-9dfc-ab6ca66bb95f",
+      "titulo": "Guia de Carreira Android",
+      "descricao": "Com o Guia de Carreira Android, saiba o que é e para que serve o Android e descubra o passo a passo para sair do INICIANTE ao AVANÇADO.",
+      "link": "https://www.youtube.com/embed/Jt6cRnki-IE?si=Xgh_kmZkJbpVWOGj",
+      "categoria": "mobile"
+    },
+    {
+      "id": "93ab2a6a-706d-4195-86ee-ec55ef337193",
+      "titulo": "Guia de Carreira Java",
+      "descricao": "4º ep. da temporada! Com o Guia de Carreira Java, saiba o que é e para que serve o Java e descubra o passo a passo para sair do INICIANTE ao AVANÇADO.",
+      "link": "https://www.youtube.com/embed/TUBqH9zVs3M?si=FuCU-5Xoy-mwlzHp",
+      "categoria": "back-end"
+    }
+  ]
+}
