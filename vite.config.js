@@ -11,7 +11,7 @@ export default defineConfig({
     },
     plugins: [react()],
     resolve: {
-        '@components': path.resolve(__dirname, 'src/components'),
+        // '@components': path.resolve(__dirname, 'src/components'),
         '@shared': path.resolve(__dirname, 'src/shared'),
     },
 });
