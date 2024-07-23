@@ -52,6 +52,23 @@
 
 
 ---
+  <section>
+  <h2>🚀 Instruções de Inicialização do Projeto</h2>
+  <ol>
+    <li>
+      Clone o repositório utilizando o comando Git no seu ambiente de desenvolvimento:
+      <code>git clone https://github.com/edvaldovitor250/to-do-list.git</code>
+    </li>
+    <li>
+      No terminal, navegue até o diretório recém-clonado e execute o seguinte comando para iniciar o servidor:
+      <code>npm run dev</code> ou <code>json-server</code>
+    </li>
+    <li>
+      Acesse a aplicação em seu navegador e comece a utilizá-la e serar rodado na porta 3000(padrão) 🎉
+    </li>
+  </ol>
+</section>
+
 
 <h2 align="center">💻 Desenvolvedores</h2> 
 
@@ -60,6 +77,8 @@
   | [<img src="https://github.com/ednaldoluiz.png" width=170 > <br> <sub> Ednaldo Luiz </sub>](https://github.com/ednaldoluiz) | [<img src="https://github.com/edvaldovitor250.png" width=170 > <br> <sub> Edvaldo Vitor </sub>](https://github.com/edvaldovitor250) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 </div>
+
+
 
 ---
 
