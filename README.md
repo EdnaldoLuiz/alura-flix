@@ -57,14 +57,14 @@
   <ol>
     <li>
       Clone o repositório utilizando o comando Git no seu ambiente de desenvolvimento:
-      <code>git clone https://github.com/edvaldovitor250/to-do-list.git</code>
+      <code>git clone https://github.com/EdnaldoLuiz/alura-flix.git</code>
     </li>
     <li>
       No terminal, navegue até o diretório recém-clonado e execute o seguinte comando para iniciar o servidor:
-      <code>npm run dev</code> ou <code>json-server</code>
+      <code>npm run dev</code>
     </li>
     <li>
-      Acesse a aplicação em seu navegador e comece a utilizá-la e serar rodado na porta 3000(padrão) 🎉
+      Acesse a aplicação em seu navegador e comece a utilizá-la e serar rodado na porta 3001🎉
     </li>
   </ol>
 </section>
